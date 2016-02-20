@@ -1,0 +1,26 @@
+{
+  "name": "giver2",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "Edmundo Retama"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/edmret/giver",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.0",
+    "angularAMD": "^0.2.1"
+  }
+}

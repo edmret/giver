@@ -14,6 +14,7 @@ module.exports = function(grunt) {
   grunt.registerTask('syncAssets', [
     'jst:dev',
     'less:dev',
+    'jade:dev',
     'sync:dev',
     'coffee:dev'
   ]);

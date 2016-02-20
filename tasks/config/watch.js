@@ -24,6 +24,13 @@ module.exports = function(grunt) {
 
       // When assets are changed:
       tasks: ['syncAssets' , 'linkAssets' ]
+    },
+    jade: {
+      // Assets to watch:
+      files: ['assets/views/*'],
+
+      // When assets are changed:
+      tasks: ['jade']
     }
   });
 

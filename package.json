@@ -35,5 +35,8 @@
     "url": "git://github.com/vagrant/giver2.git"
   },
   "author": "vagrant",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "grunt-contrib-jade": "^0.15.0"
+  }
 }

@@ -10,7 +10,7 @@ define(['angularAMD', 'angular-route', 'angular-material','ngmap', 'geolocation'
   ]);
 
 
-    app.config(function ($routeProvider, $mdThemingProvider) {
+    app.config(function ($routeProvider, $httpProvider, $mdThemingProvider) {
 
         //index Route
         $routeProvider
@@ -20,6 +20,12 @@ define(['angularAMD', 'angular-route', 'angular-material','ngmap', 'geolocation'
             controllerUrl: 'Controllers/HomeCtrl'
         }))
 
+        .when("/user/login", angularAMD.route({
+            templateUrl: '/views/collaborate_new.html',
+            controller: 'CollaborateNewCtrl',
+            controllerUrl: 'Controllers/CollaborateNewCtrl'
+        }))
+
         .when("/collaborate/new", angularAMD.route({
             templateUrl: '/views/collaborate_new.html',
             controller: 'CollaborateNewCtrl',
@@ -27,8 +33,18 @@ define(['angularAMD', 'angular-route', 'angular-material','ngmap', 'geolocation'
         }));
 
 
-        /*$mdThemingProvider.theme('default')
-        .dark();*/
+        //request interceptor for the response
+        /*$httpProvider.interceptors.push(function($q) {
+          return {
+           'request': function(config) {
+               // same as above
+            },
+
+            'response': function(response) {
+               // same as above
+            }
+          };
+        });*/
 
     });
 

@@ -1,8 +1,6 @@
 include components/header
 
 main.main
-
-    
   section.map-section
     h2
       span.ico
@@ -10,13 +8,8 @@ main.main
       | Someone needs your help, hug them with a supply!
     p here are the nearest collectors for you
     .map-wrap(ng-controller="MapController").
-      <ng-map center="current-location" zoom="10" styles="[{stylers:[{hue:'#2C7597'},{visibility:'simplified'},{gamma:0.5},{weight:0.5}]},{elementType:'labels',stylers:[{visibility:'on'}]},{featureType:'water',stylers:[{color:'#61c6f4'}]}]">
-        <marker ng-repeat="beach in fakeGeopoints"
-            icon="{{image.url}}"
-            title="{{beach[0]}}"
-            position="{{beach[1]}}, {{beach[2]}}"
-            z-index="{{beach[3]}}"></marker>
-        </ng-map>
+      <ng-map center="current-location" zoom="12" styles="[{stylers:[{hue:'#2C7597'},{visibility:'simplified'},{gamma:0.5},{weight:0.5}]},{elementType:'labels',stylers:[{visibility:'on'}]},{featureType:'water',stylers:[{color:'#61c6f4'}]}]">
+        
       </ng-map>
   section.collaborate-section
     h2
@@ -24,15 +17,15 @@ main.main
         <md-icon md-svg-src="images/greentech.svg" cass="icon-title" aria-label="deliver"/> 
       | I'm part of logistics
     .custom-button-grid
-      a.new-collaborator.md-button(href="#/collaborate/new")
+      a.new-collaborator.md-button(href="#/collect/index")
         span.ico
           <md-icon md-svg-src="images/handshake.svg" cass="icon-title" aria-label="deliver" />
         | Collector!
-      a.new-center.md-button(href="#/deliver/new")
+      a.new-center.md-button(href="#/deliver/index")
         span.ico
           <md-icon md-svg-src="images/delivery.svg" cass="icon-title" aria-label="deliver" />
         | Deliver man
-      a.new-center.md-button(href="#/center/new")
+      a.new-center.md-button(href="#/center/index")
         span.ico
           <md-icon md-svg-src="images/product.svg" cass="icon-title" aria-label="deliver" />
         | Collector Center!

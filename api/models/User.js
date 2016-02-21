@@ -9,10 +9,6 @@
 module.exports = {
 
   attributes: require('waterlock').models.user.attributes({
-    nickname: {
-      type: 'string',
-      required: true
-    },
     picture: 'string',
     lasttime: 'datetime'
   }),

@@ -1,0 +1,15 @@
+form(action="auth/login" method="post")
+  fieldset.md-inline-form(layout="column" ng-cloak layout-padding)
+    div
+      <md-input-container>
+      label(for="email") E-mail:
+      input(type="email" id="email" name="email")
+      </md-input-container>
+    div
+      <md-input-container>
+      label(for="password") Password:
+      input(type="password" id="password" name="password")
+      </md-input-container>
+
+    div
+      <md-button class="md-raised md-primary">Sign up</md-button>

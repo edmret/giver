@@ -37,6 +37,7 @@
   "author": "vagrant",
   "license": "",
   "devDependencies": {
-    "grunt-contrib-jade": "^0.15.0"
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-spritesmith": "^6.3.0"
   }
 }

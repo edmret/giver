@@ -17,19 +17,19 @@ define(['angularAMD', 'angular-route', 'angular-material','ngmap', 'geolocation'
         .when("/", angularAMD.route({
             templateUrl: '/views/home.html',
             controller: 'HomeCtrl',
-            controllerUrl: 'Controllers/HomeCtrl'
+            controllerUrl: 'controllers/HomeCtrl'
         }))
 
         .when("/user/login", angularAMD.route({
             templateUrl: '/views/collaborate_new.html',
             controller: 'CollaborateNewCtrl',
-            controllerUrl: 'Controllers/CollaborateNewCtrl'
+            controllerUrl: 'controllers/CollaborateNewCtrl'
         }))
 
         .when("/collaborate/new", angularAMD.route({
             templateUrl: '/views/collaborate_new.html',
             controller: 'CollaborateNewCtrl',
-            controllerUrl: 'Controllers/CollaborateNewCtrl'
+            controllerUrl: 'controllers/CollaborateNewCtrl'
         }));
 
 

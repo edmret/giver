@@ -8,7 +8,8 @@ require.config({
         'angular-messages': "/bower_components/angular-messages/angular-messages",
         'angular-material': "/bower_components/angular-material/angular-material",
         angularAMD: "/bower_components/angularAMD/angularAMD",
-        'ngload': '/bower_components/angularAMD/ngload'
+        'ngload': '/bower_components/angularAMD/ngload',
+        'ngmap': '/bower_components/ngmap/build/scripts/ng-map'
     },
     shim: {
         angular: {
@@ -20,6 +21,7 @@ require.config({
               "angular"
             ]
         },
+
 
         'angular-messages': {
             deps: [
@@ -56,6 +58,12 @@ require.config({
         ngload: [
           'angularAMD'
         ],
+
+        ngmap: {
+          deps: [
+            "angular"
+          ]
+        },
 
         angularAMD: {
           deps: ["angular"]

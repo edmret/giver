@@ -1,5 +1,17 @@
 include components/header
 
 main.main
-  h1 Giver
-  blockquote supply like a hug!
+
+    
+  section.map-section
+    h2 Someone needs your help, hug them with a supply!
+    p here are the nearest collectors for you
+    .map-wrap
+      <ng-map center="40.6743890, -73.9455" zoom="12" styles="[{stylers:[{hue:'#890000'},{visibility:'simplified'},{gamma:0.5},{weight:0.5}]},{elementType:'labels',stylers:[{visibility:'off'}]},{featureType:'water',stylers:[{color:'#890000'}]}]"></ng-map>
+  
+  section.collaborate-section
+    h2 I'm part of logistics
+    .custom-button-grid
+      a.new-collaborator.md-button(href="#/collaborate/new") Collector!
+      a.new-center.md-button(href="#/deliver/new") Deliver man
+      a.new-center.md-button(href="#/center/new") Collector Center!

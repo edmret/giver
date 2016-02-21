@@ -1,7 +1,13 @@
 
-define(['angularAMD', 'angular-route', 'angular-material','ngmap'], function (angularAMD, ngRoute, ngMaterial, ngMap) {
+define(['angularAMD', 'angular-route', 'angular-material','ngmap', 'geolocation','controllers/MapController'], function (angularAMD, ngRoute, ngMaterial, ngMap, geolocation,MapController) {
 
-    var app = angular.module("giver", ['ngRoute', 'ngMaterial','ngMap']);
+    var app = angular.module("giver", [
+      'ngRoute',
+      'ngMaterial',
+      'ngMap',
+      'geolocation',
+      'giver.controllers.MapController'
+  ]);
 
 
     app.config(function ($routeProvider, $mdThemingProvider) {

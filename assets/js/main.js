@@ -9,7 +9,8 @@ require.config({
         'angular-material': "/bower_components/angular-material/angular-material",
         angularAMD: "/bower_components/angularAMD/angularAMD",
         'ngload': '/bower_components/angularAMD/ngload',
-        'ngmap': '/bower_components/ngmap/build/scripts/ng-map'
+        'ngmap': '/bower_components/ngmap/build/scripts/ng-map',
+        'geolocation': '/bower_components/angularjs-geolocation/src/geolocation'
     },
     shim: {
         angular: {
@@ -20,6 +21,12 @@ require.config({
             deps: [
               "angular"
             ]
+        },
+
+        'geolocation': {
+          deps: [
+            "angular"
+          ]
         },
 
 

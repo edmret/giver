@@ -38,6 +38,7 @@ define(['angular','ngmap', 'geolocation'], function (angular,ngmap, geolocation)
         ];*/
 
 
+        //add random fake pins
         geolocation.getLocation().then(function(data){
           $scope.coords = {lat:data.coords.latitude, long:data.coords.longitude};
 

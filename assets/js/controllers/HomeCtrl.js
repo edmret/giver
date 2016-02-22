@@ -1,6 +1,10 @@
-define(['app'], function (app) {
+define(['angular'], function (angular) {
 
-    app.controller('HomeCtrl', function ($scope) {
-        $scope.message = "Message from HomeCtrl";
+    'use strict';
+    angular.module('giver.controllers.HomeCtrl', [])
+    .controller('HomeCtrl', function ($scope) {
+
     });
+
+
 });

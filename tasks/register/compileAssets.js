@@ -19,6 +19,8 @@ module.exports = function(grunt) {
     'less:dev',
     'copy:dev',
     'jade:dev',
-    'coffee:dev'
+    'coffee:dev',
+    'ngtemplates',
+    'requirejs'
   ]);
 };

@@ -39,7 +39,10 @@
   "author": "vagrant",
   "license": "",
   "devDependencies": {
+    "grunt-angular-templates": "^1.0.3",
     "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-ng-annotate": "^1.0.1",
     "grunt-spritesmith": "^6.3.0"
   }
 }

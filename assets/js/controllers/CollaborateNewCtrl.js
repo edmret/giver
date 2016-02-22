@@ -1,6 +1,10 @@
-define(['app'], function (app) {
+define(['angular'], function (angular) {
 
-    app.controller('CollaborateNewCtrl', function ($scope) {
-        $scope.message = "Message from CollaborateNewCtrl";
+    'use strict';
+    angular.module('giver.controllers.CollaborateNewCtrl', [])
+    .controller('CollaborateNewCtrl', function ($scope) {
+
     });
+
+
 });

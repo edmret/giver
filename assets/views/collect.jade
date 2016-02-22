@@ -1,0 +1,30 @@
+include components/header
+
+
+main.main
+  h1 
+    span.ico
+      <md-icon md-svg-src="images/handshake.svg" cass="icon-title" aria-label="deliver" />
+    | Product Registration
+
+  fieldset.md-inline-form(layout="column" ng-cloak layout-padding)
+    div
+      <md-input-container>
+      label(for="search") Search:
+      input(type="search" id="search-product-type" name="search" ng-model="searcWord")
+      </md-input-container>
+    div
+
+  ul.category-list
+    li
+      a.medicine-ico Medicines
+    li
+      a.victuals-ico Victuals
+      
+    li
+      a.helpers-ico Helpers
+
+
+  
+  
+    
